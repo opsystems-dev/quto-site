@@ -40,7 +40,7 @@ export function EarlyAccessForm() {
     return (
       <section id="early-access-form" className="py-16 px-4 bg-gray-50">
         <div className="container mx-auto text-center max-w-md">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">You're In! 🎉</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">You&apos;re In! 🎉</h2>
           <p className="text-gray-600 mb-8">
             Thanks for joining the early access program. We&apos;ll be in touch soon with updates and your exclusive 3-month discount!
           </p>
