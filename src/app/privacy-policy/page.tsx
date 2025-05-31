@@ -1,3 +1,4 @@
+import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -16,11 +17,11 @@ export default function PrivacyPolicy() {
             
             <section>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">Introduction</h2>
-              <p>
-                OP Systems Pty Ltd ("we," "our," or "us") operates the Quto application. 
-                This Privacy Policy explains how we collect, use, and protect your personal information 
-                when you use our early access program and services.
-              </p>
+                <p>
+                  OP Systems Pty Ltd (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) operates the Quto application. 
+                  This Privacy Policy explains how we collect, use, and protect your personal information 
+                  when you use our early access program and services.
+                </p>
             </section>
   
             <section>
@@ -65,12 +66,9 @@ export default function PrivacyPolicy() {
           </div>
   
           <div className="mt-12">
-            <a 
-              href="/" 
-              className="text-blue-600 hover:text-blue-700 underline"
-            >
+            <Link href="/" className="text-blue-600 hover:text-blue-700 underline">
               ← Back to Home
-            </a>
+            </Link>
           </div>
         </div>
       </main>

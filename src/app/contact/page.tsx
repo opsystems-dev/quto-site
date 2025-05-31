@@ -1,3 +1,4 @@
+import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -14,10 +15,10 @@ export default function Contact() {
           <div className="space-y-6">
             <div>
               <h2 className="text-xl font-semibold text-gray-900 mb-3">Get in Touch</h2>
-              <p className="text-gray-600 mb-4">
-                Have questions about Quto or want to learn more about our early access program? 
-                We'd love to hear from you.
-              </p>
+                <p className="text-gray-600 mb-4">
+                  Have questions about Quto or want to learn more about our early access program? 
+                  We&apos;d love to hear from you.
+                </p>
             </div>
   
             <div>
@@ -33,20 +34,17 @@ export default function Contact() {
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Early Access Inquiries</h3>
               <p className="text-gray-600">
                 For questions about joining our early access program, please use the 
-                <a href="/#early-access-form" className="text-blue-600 hover:text-blue-700 underline ml-1">
-                  early access form
-                </a> on our homepage.
+                  <Link href="/#early-access-form" className="text-blue-600 hover:text-blue-700 underline ml-1">
+                    early access form
+                  </Link> on our homepage.
               </p>
             </div>
           </div>
   
           <div className="mt-12">
-            <a 
-              href="/" 
-              className="text-blue-600 hover:text-blue-700 underline"
-            >
+            <Link href="/" className="text-blue-600 hover:text-blue-700 underline">
               ← Back to Home
-            </a>
+            </Link>
           </div>
         </div>
       </main>

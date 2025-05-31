@@ -31,6 +31,7 @@ export function EarlyAccessForm() {
         alert("Something went wrong. Please try again.")
       }
     } catch (error) {
+      console.error("Form submission error:", error)
       alert("Something went wrong. Please try again.")
     }
   }
@@ -41,7 +42,7 @@ export function EarlyAccessForm() {
         <div className="container mx-auto text-center max-w-md">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">You're In! 🎉</h2>
           <p className="text-gray-600 mb-8">
-            Thanks for joining the early access program. We'll be in touch soon with updates and your exclusive 3-month discount!
+            Thanks for joining the early access program. We&apos;ll be in touch soon with updates and your exclusive 3-month discount!
           </p>
           
           {/* Invisible spacer to match form height */}

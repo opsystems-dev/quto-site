@@ -1,3 +1,4 @@
+import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -18,7 +19,7 @@ export default function TermsOfService() {
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">Early Access Program</h2>
               <p>
                 By joining the Quto early access program, you agree to test our software 
-                and provide feedback. The service is provided "as is" during this testing phase.
+                and provide feedback. The service is provided &quot;as is&quot; during this testing phase.
               </p>
             </section>
   
@@ -26,7 +27,7 @@ export default function TermsOfService() {
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">Service Availability</h2>
               <p>
                 During early access, Quto may be temporarily unavailable for maintenance, 
-                updates, or improvements. We'll communicate any planned downtime in advance.
+                updates, or improvements. We&apos;ll communicate any planned downtime in advance.
               </p>
             </section>
   
@@ -66,12 +67,9 @@ export default function TermsOfService() {
           </div>
   
           <div className="mt-12">
-            <a 
-              href="/" 
-              className="text-blue-600 hover:text-blue-700 underline"
-            >
+            <Link href="/" className="text-blue-600 hover:text-blue-700 underline">
               ← Back to Home
-            </a>
+            </Link>
           </div>
         </div>
       </main>
