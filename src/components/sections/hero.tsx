@@ -23,10 +23,10 @@ export function Hero() {
                 AI-Powered
                 </span>
             </div>
-            Asset Management for Construction
+            Plant Management for Construction
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto animate-in fade-in duration-1000 delay-400">
-            Finally, fault reports that actually help. Our AI assistant turns useless complaints into actionable details, plus proper maintenance tracking and compliance - all in one place your crew will actually use.
+            Track your tippers, excavators, cranes, and all your plant with usage-based maintenance scheduling, intelligent fault reporting, compliance tracking, and AI assistance that your crews and mechanics will actually love.
             </p>
             <div className="flex justify-center animate-in fade-in duration-1000 delay-600">
             <Button 
@@ -34,7 +34,7 @@ export function Hero() {
                 onClick={scrollToForm}
                 className="hover:scale-105 transition-transform duration-200"
             >
-                Request Early Access
+                See How It Works
             </Button>
             </div>
         </div>

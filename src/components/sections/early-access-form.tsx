@@ -38,7 +38,7 @@ export function EarlyAccessForm() {
 
   if (submitted) {
     return (
-      <section id="early-access-form" className="py-16 px-4 bg-gray-50">
+      <section id="early-access-form" className="py-16 px-4 bg-gradient-to-t from-white to-slate-100">
         <div className="container mx-auto text-center max-w-md">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">You&apos;re In! 🎉</h2>
           <p className="text-gray-600 mb-8">
@@ -58,7 +58,7 @@ export function EarlyAccessForm() {
   }
 
   return (
-    <section id="early-access-form" className="py-16 px-4 bg-gray-50">
+    <section id="early-access-form" className="py-16 px-4 bg-gradient-to-t from-white to-slate-100">
       <div className="container mx-auto text-center max-w-md">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">Join Early Access</h2>
         <p className="text-gray-600 mb-8">
