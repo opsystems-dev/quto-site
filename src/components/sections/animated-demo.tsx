@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useCallback, useMemo } from "react"
 import { Bot, Target, User, Wrench, Brain, ArrowRight, Zap } from "lucide-react"
 
 interface Step {
@@ -14,16 +14,30 @@ export function AnimatedDemo() {
   const [currentStep, setCurrentStep] = useState(-1)
   const [isVisible, setIsVisible] = useState(false)
 
-  const steps: Step[] = [
+  const steps: Step[] = useMemo(() => [
     { type: 'initial', speaker: 'user', content: '"Flat battery again"', delay: 1000 },
-    { type: 'ai_question', speaker: 'ai', content: 'I can see this was also reported a month ago and the battery was replaced in Sep 2024, so it\'s still relatively new. How long has it been sitting unused?', delay: 1500 },
+    { type: 'ai_question', speaker: 'ai', content: 'I can see this was also reported a month ago and the battery was replaced in Sep 2024, so it is still relatively new. How long has it been sitting unused?', delay: 1500 },
     { type: 'user_answer', speaker: 'user', content: 'all weekend', delay: 1200 },
     { type: 'ai_question', speaker: 'ai', content: 'Does it jump start easily, or does it struggle even with jumper cables?', delay: 1500 },
     { type: 'user_answer', speaker: 'user', content: 'nah jumps fine and runs all day after', delay: 1200 },
     { type: 'ai_question', speaker: 'ai', content: 'Are there any warning lights on the dashboard when you try to start it?', delay: 1500 },
     { type: 'user_answer', speaker: 'user', content: 'nope just clicks when i turn the key', delay: 1200 },
     { type: 'final', speaker: 'system', content: 'Potential parasitic drain issue. 2nd occurrence this month. Battery replaced Sep 2024. Happened after sitting over weekend, jump starts easily and operates normally during use. No warning lights, starter clicks indicate sufficient power for electronics but not starter motor. Likely aftermarket equipment or faulty relay drawing power while parked. Check radio, GPS, work lights, and relay box for components staying active.', delay: 2000 }
-  ]
+  ], [])
+
+  const startAnimation = useCallback(() => {
+    let stepIndex = 0
+    
+    const showNextStep = () => {
+      if (stepIndex < steps.length) {
+        setCurrentStep(stepIndex)
+        stepIndex++
+        setTimeout(showNextStep, steps[stepIndex - 1]?.delay || 1000)
+      }
+    }
+    
+    setTimeout(showNextStep, 800) // Initial delay
+  }, [steps])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -40,21 +54,7 @@ export function AnimatedDemo() {
     if (element) observer.observe(element)
 
     return () => observer.disconnect()
-  }, [isVisible])
-
-  const startAnimation = () => {
-    let stepIndex = 0
-    
-    const showNextStep = () => {
-      if (stepIndex < steps.length) {
-        setCurrentStep(stepIndex)
-        stepIndex++
-        setTimeout(showNextStep, steps[stepIndex - 1]?.delay || 1000)
-      }
-    }
-    
-    setTimeout(showNextStep, 800) // Initial delay
-  }
+  }, [isVisible, startAnimation])
 
   const resetAnimation = () => {
     setCurrentStep(-1)
@@ -70,7 +70,7 @@ export function AnimatedDemo() {
             From Useless Reports to Actionable Intelligence
           </h2>
           <p className="text-xl text-gray-600">
-            Watch how Quto's AI assistant transforms vague complaints into detailed information your mechanics can actually use.
+            Watch how Quto&apos;s AI assistant transforms vague complaints into detailed information your mechanics can actually use.
           </p>
         </div>
 
@@ -111,15 +111,15 @@ export function AnimatedDemo() {
                     {/* Radio Button Options */}
                     <div className="space-y-2">
                       <label className="flex items-center">
-                        <input type="radio" name="battery" className="mr-2" />
+                        <input type="radio" name="battery" className="mr-2" readOnly />
                         <span className="bg-green-100 text-green-700 px-2 py-1 rounded text-sm">OK</span>
                       </label>
                       <label className="flex items-center">
-                        <input type="radio" name="battery" className="mr-2" checked />
+                        <input type="radio" name="battery" className="mr-2" checked readOnly />
                         <span className="bg-red-100 text-red-700 px-2 py-1 rounded text-sm font-medium">Issue</span>
                       </label>
                       <label className="flex items-center">
-                        <input type="radio" name="battery" className="mr-2" />
+                        <input type="radio" name="battery" className="mr-2" readOnly />
                         <span className="bg-yellow-100 text-yellow-700 px-2 py-1 rounded text-sm">Not Checked</span>
                       </label>
                     </div>
@@ -131,7 +131,7 @@ export function AnimatedDemo() {
                       Describe the issue:
                     </label>
                     <div className="bg-white border border-gray-300 rounded p-2">
-                      <p className="text-red-700 italic">"Flat battery again"</p>
+                      <p className="text-red-700 italic">Flat battery again</p>
                     </div>
                   </div>
                   
@@ -212,15 +212,15 @@ export function AnimatedDemo() {
                     {/* Radio Button Options */}
                     <div className="space-y-2">
                       <label className="flex items-center">
-                        <input type="radio" name="battery" className="mr-2" />
+                        <input type="radio" name="battery" className="mr-2" readOnly />
                         <span className="bg-green-100 text-green-700 px-2 py-1 rounded text-sm">OK</span>
                       </label>
                       <label className="flex items-center">
-                        <input type="radio" name="battery" className="mr-2" checked />
+                        <input type="radio" name="battery" className="mr-2" checked readOnly />
                         <span className="bg-red-100 text-red-700 px-2 py-1 rounded text-sm font-medium">Issue</span>
                       </label>
                       <label className="flex items-center">
-                        <input type="radio" name="battery" className="mr-2" />
+                        <input type="radio" name="battery" className="mr-2" readOnly />
                         <span className="bg-yellow-100 text-yellow-700 px-2 py-1 rounded text-sm">Not Checked</span>
                       </label>
                     </div>
@@ -232,7 +232,7 @@ export function AnimatedDemo() {
                       Describe the issue:
                     </label>
                     <div className="bg-white border border-gray-300 rounded p-2">
-                      <p className="text-red-700 italic">"Flat battery again"</p>
+                      <p className="text-red-700 italic">Flat battery again</p>
                     </div>
                   </div>
 

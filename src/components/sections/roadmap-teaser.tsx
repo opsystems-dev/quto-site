@@ -6,7 +6,7 @@ export function RoadmapTeaser() {
             Built for Today, Designed for Tomorrow
           </h2>
           <p className="text-xl text-gray-600 mb-8">
-            Quto starts with plant management, but we're building the complete operational platform.
+            Quto starts with plant management, but we&apos;re building the complete operational platform.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="bg-blue-50 p-6 rounded-lg">
@@ -16,7 +16,7 @@ export function RoadmapTeaser() {
             </div>
             <div className="bg-gray-50 p-6 rounded-lg">
               <h3 className="font-semibold text-gray-900 mb-2">Phase 2</h3>
-              <p className="text-gray-600">Project & Resource Management</p>
+              <p className="text-gray-600">Project &amp; Resource Management</p>
             </div>
             <div className="bg-gray-50 p-6 rounded-lg">
               <h3 className="font-semibold text-gray-900 mb-2">Phase 3</h3>

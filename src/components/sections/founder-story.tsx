@@ -10,7 +10,7 @@ export function FounderStory() {
           </p>
           <div className="bg-white p-8 rounded-lg shadow-sm">
             <p className="text-gray-500 italic">
-              "Why I'm building this" narrative will go here...
+              &quot;Why I&apos;m building this&quot; narrative will go here...
             </p>
           </div>
         </div>
