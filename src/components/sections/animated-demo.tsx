@@ -137,9 +137,8 @@ export function AnimatedDemo() {
                   
                   {/* Frustrated Mechanic Note */}
                   <div className="mt-4 text-center">
-                    <p className="text-xs text-gray-500 italic">
-                      😤 Mechanic gets this and has to<br />
-                      spend 30+ minutes diagnosing
+                    <p className="text-sm text-gray-500 italic">
+                      😤 Frustrated Mechanic
                     </p>
                   </div>
                 </div>
@@ -184,7 +183,7 @@ export function AnimatedDemo() {
           <div>
             <div className="flex items-center justify-center mb-6">
               <span className="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-lg font-medium">
-                ✅ AFTER: Same Form + AI Superpowers
+                ✅ AFTER: Happy Team with AI Auperpowers
               </span>
             </div>
             
@@ -277,16 +276,13 @@ export function AnimatedDemo() {
                   <div className={`transition-all duration-1000 mt-5 ${
                     currentStep >= steps.length - 1 ? 'opacity-100 scale-100' : 'opacity-0 scale-'
                   }`}>
-                    <div className="bg-green-50 border-2 border-green-200 rounded-lg p-4 min-h-[200px]">
+                    <div className="bg-green-50 border-2 border-green-200 rounded-lg p-4">
                       <div className="flex items-start gap-3">
                         <Wrench className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
                         <div>
-                          <p className="text-green-700 font-semibold text-sm mb-2">For Your Mechanic:</p>
+                          <p className="text-green-700 font-semibold text-sm mb-2">Auto-Generated Diagnostic Summary:</p>
                           <p className="text-green-700 text-sm leading-relaxed">
                             {steps[steps.length - 1]?.content}
-                          </p>
-                          <p className="text-green-600 font-medium text-sm mt-3">
-                            ⚡ Auto-generated diagnostic summary
                           </p>
                         </div>
                       </div>
@@ -305,25 +301,17 @@ export function AnimatedDemo() {
                 </div>
               </div>
 
-              {/* Replay Button */}
-              {currentStep >= steps.length - 1 && (
-                <div className="mt-4 text-center">
-                  <button 
-                    onClick={resetAnimation}
-                    className="text-blue-600 hover:text-blue-700 underline text-xs"
-                  >
-                    ↻ Watch Again
-                  </button>
-                </div>
-              )}
+              {/* Replay Button - Always Visible */}
+              <div className="mt-4 text-center">
+                <button 
+                  onClick={resetAnimation}
+                  className="text-blue-600 hover:text-blue-700 underline text-xs"
+                >
+                  {currentStep >= steps.length - 1 ? '↻ Watch Again' : '↻ Restart'}
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div className="text-center mt-12">
-          <p className="text-lg text-gray-600">
-            Finally, fault reports that actually help your mechanics fix problems instead of playing detective.
-          </p>
         </div>
       </div>
     </section>
