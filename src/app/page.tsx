@@ -3,7 +3,7 @@ import { AnimatedDemo } from "@/components/sections/animated-demo"
 import { Features } from "@/components/sections/features"
 import { CTA } from "@/components/sections/cta"
 import { FounderStory } from "@/components/sections/founder-story"
-import { RoadmapTeaser } from "@/components/sections/roadmap-teaser"
+import { VisionTeaser } from "@/components/sections/vision-teaser"
 import { EarlyAccessForm } from "@/components/sections/early-access-form"
 import { Footer } from "@/components/sections/footer"
 
@@ -15,7 +15,7 @@ export default function Home() {
       <Features />
       <CTA />
       <FounderStory />
-      <RoadmapTeaser />
+      <VisionTeaser />
       <EarlyAccessForm />
       <Footer />
     </main>

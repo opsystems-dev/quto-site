@@ -96,6 +96,13 @@ export function EarlyAccessForm() {
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white"
                 required
             />
+            <textarea
+                id="comment"
+                name="comment"
+                placeholder="Optional... a quick thought or some more info"
+                rows={3}
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white resize-none"
+            />
             <Button type="submit" size="lg" className="w-full">
                 Request Early Access - Get 3 Months Free!
             </Button>
