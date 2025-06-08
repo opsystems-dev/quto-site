@@ -277,9 +277,11 @@ export default function Vision() {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-white"
                     required
                     />
-                    <Button type="submit" className="w-full">
-                    Share My Thoughts
-                    </Button>
+                    <div className="text-center">
+                      <Button type="submit" size="lg" className="w-full sm:w-auto sm:min-w-60">
+                      Share My Thoughts
+                      </Button>
+                    </div>
                 </form>
             </>
             )}

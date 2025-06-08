@@ -77,7 +77,7 @@ export function AnimatedDemo() {
         {/* Side by Side: Prestart Form vs AI Demo */}
         <div 
           id="animated-demo" 
-          className="grid lg:grid-cols-2 gap-6 items-start"
+          className="grid lg:grid-cols-2 gap-16 lg:gap-6 items-start"
         >
           {/* Left Column: Realistic Prestart Form */}
           <div>
@@ -93,7 +93,7 @@ export function AnimatedDemo() {
               <div className="bg-white rounded-xl overflow-hidden shadow-sm">
                 <div className="bg-gray-50 px-4 py-2 border-b border-gray-200">
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-600">Daily Prestart Checklist</span>
+                    <span className="text-sm text-gray-600">Plant Prestart Checklist</span>
                     <span className="text-xs text-gray-400">no-code app</span>
                   </div>
                 </div>
@@ -183,7 +183,7 @@ export function AnimatedDemo() {
           <div>
             <div className="flex items-center justify-center mb-6">
               <span className="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-lg font-medium">
-                ✅ AFTER: Happy Team with AI Auperpowers
+                ✅ AFTER: Happy AI Superpowered Team
               </span>
             </div>
             
@@ -193,7 +193,7 @@ export function AnimatedDemo() {
               <div className="bg-white rounded-xl overflow-hidden shadow-sm">
                 <div className="bg-gray-50 px-4 py-2 border-b border-gray-200">
                   <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-600">Daily Prestart Checklist</span>
+                    <span className="text-sm text-gray-600">Plant Prestart Checklist</span>
                     <span className="text-sm text-blue-600 font-medium">✨ Quto AI</span>
                   </div>
                 </div>
@@ -294,8 +294,7 @@ export function AnimatedDemo() {
                     currentStep >= steps.length - 1 ? 'opacity-100' : 'opacity-0'
                   }`}>
                     <p className="text-sm text-green-600 italic">
-                      😊 Mechanic gets detailed info<br />
-                      and can fix it immediately!
+                      😊 Mechanic gets detailed info and prioritises effectively!
                     </p>
                   </div>
                 </div>
