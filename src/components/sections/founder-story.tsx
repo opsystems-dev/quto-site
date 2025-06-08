@@ -4,7 +4,7 @@ export function FounderStory() {
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Built by Someone Who's Lived the Chaos
+              Built by Someone Who&apos;s Lived the Chaos
             </h2>
             <p className="text-xl text-gray-600">
               15+ years in construction has shown me exactly what teams want and need
@@ -17,13 +17,13 @@ export function FounderStory() {
               <div className="space-y-4">
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">From the Trenches to the Solution</h3>
                 <p className="text-gray-600 leading-relaxed">
-                I've progressed from site engineer to project manager to operations manager.
-                With each step up, I was determined to fix the problems and frustrations I'd faced before.
-                Fifteen years of solving operational chaos from the inside, unlocking teams' potential only to watch it get stolen by the next administrative burden.
+                I&apos;ve progressed from site engineer to project manager to operations manager.
+                With each step up, I was determined to fix the problems and frustrations I&apos;d faced before.
+                Fifteen years of solving operational chaos from the inside, unlocking teams&apos; potential only to watch it get stolen by the next administrative burden.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
-                Every construction company I've worked with struggles with the same operational chaos.
-                Skilled tradies spending hours on paperwork they don't understand.
+                Every construction company I&apos;ve worked with struggles with the same operational chaos.
+                Skilled tradies spending hours on paperwork they don&apos;t understand.
                 Enthusiastic engineers turned into burnt-out administrators.
                 Brilliant businesses drowning in admin overhead instead of focusing on what they do best.
                 </p>
@@ -32,9 +32,9 @@ export function FounderStory() {
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">Why Now, Why AI</h3>
                 <p className="text-gray-600 leading-relaxed">
-                I've built solutions in Excel, Airtable, and nearly every platform imaginable - always hitting limitations, never fully satisfied. 
+                I&apos;ve built solutions in Excel, Airtable, and nearly every platform imaginable - always hitting limitations, never fully satisfied. 
                 AI finally makes it possible to build the tools we always needed. 
-                These tools can transform businesses and improve people's work lives more than I ever could through consulting alone.
+                These tools can transform businesses and improve people&apos;s work lives more than I ever could through consulting alone.
                 </p>
               </div>
             </div>
@@ -61,7 +61,7 @@ export function FounderStory() {
                     <p className="font-medium text-gray-900">Project Manager</p>
                     <p className="text-sm text-gray-600">
                         Connected the dots and started seeing the bigger picture.
-                        Suddenly understanding why all those "pointless" systems existed.
+                        Suddenly understanding why all those &quot;pointless&quot; systems existed.
                         Finally able to push back a little, but constantly hit with excuses.
                     </p>
                   </div>
@@ -74,7 +74,7 @@ export function FounderStory() {
                     <p className="text-sm text-gray-600">
                         Realised delivering great work is only half the battle - admin overhead was growing out of control.
                         Making it better for one role often made it twice as hard for another.
-                        Today's tools always falling short of what we really needed and often adding more work.
+                        Today&apos;s tools always falling short of what we really needed and often adding more work.
                     </p>
                   </div>
                 </div>
@@ -97,8 +97,8 @@ export function FounderStory() {
           
           <div className="text-center mt-12">
             <p className="text-lg text-gray-700 italic">
-              "I don't just theorise about construction problems, I've lived them.<br />
-              Now I'm building the tools that actually solve them."
+              &quot;I don&apos;t just theorise about construction problems, I&apos;ve lived them.<br />
+              Now I&apos;m building the tools that actually solve them.&quot;
             </p>
             <p className="text-gray-600 mt-2">— Haiden Baker, Founder</p>
           </div>

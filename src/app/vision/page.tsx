@@ -11,12 +11,6 @@ export default function Vision() {
   const [feedback, setFeedback] = useState("")
   const [submitted, setSubmitted] = useState(false)
 
-  const scrollToFeedback = () => {
-    document.getElementById('feedback-form')?.scrollIntoView({ 
-      behavior: 'smooth' 
-    })
-  }
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     
@@ -53,7 +47,7 @@ export default function Vision() {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">The Vision</h1>
           <p className="text-xl text-gray-600">
-            Where we're heading with AI-powered construction operations
+            Where we&apos;re heading with AI-powered construction operations
           </p>
         </div>
 
@@ -62,19 +56,19 @@ export default function Vision() {
           
           <div className="bg-blue-50 p-8 rounded-lg border-l-4 border-blue-600">
             <p className="text-lg font-medium text-blue-900 mb-0">
-              If you're reading this, you probably clicked through because you're curious about where this is all heading. 
+              If you&apos;re reading this, you probably clicked through because you&apos;re curious about where this is all heading. 
               Good - because I want to share the bigger picture with you.
             </p>
           </div>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-gray-900">The Problem We're Really Solving</h2>
+            <h2 className="text-2xl font-bold text-gray-900">The Problem We&apos;re Really Solving</h2>
             <p>
-              Every construction company I've worked with faces the same fundamental challenge: <strong>operational overhead is growing faster than revenue</strong>. 
+              Every construction company I&apos;ve worked with faces the same fundamental challenge: <strong>operational overhead is growing faster than revenue</strong>. 
               Great businesses are drowning in admin, compliance, and reporting requirements that pull resources away from what actually makes money.
             </p>
             <p>
-              You know the feeling - you started your business to build great things, but somehow you're spending more time managing systems than managing projects. 
+              You know the feeling - you started your business to build great things, but somehow you&apos;re spending more time managing systems than managing projects. 
               Your best people are getting burned out on paperwork instead of using their skills where they matter most.
             </p>
           </section>
@@ -82,7 +76,7 @@ export default function Vision() {
           <section className="space-y-4">
             <h2 className="text-2xl font-bold text-gray-900">Why AI Changes Everything</h2>
             <p>
-              Here's what I've learned after 15+ years trying to solve these problems: <strong>the issue isn't that we need more systems - it's that we need less and that our systems don't work together.</strong> They are creating more work instead of eliminating it.
+              Here&apos;s what I&apos;ve learned after 15+ years trying to solve these problems: <strong>the issue isn&apos;t that we need more systems - it&apos;s that we need less and that our systems don&apos;t work together.</strong> They are creating more work instead of eliminating it.
             </p>
             <p>
               AI finally makes it possible to build software that actually helps people do their jobs better. Not just digitising paperwork, but genuinely enhancing human capability. 
@@ -94,9 +88,9 @@ export default function Vision() {
           <section className="space-y-4 mb-12">
             <h2 className="text-2xl font-bold text-gray-900">The Early Vision</h2>
             <p className="mb-8">
-              Quto starts with plant management because that's a simple frustration I've thought through maticulously.
-              It's something my existing clients use everyday.
-              It's something that if not done right, can bury you in paperwork and depreciate your machines faster than you can say Kwazy Cupcakes.
+              Quto starts with plant management because that&apos;s a simple frustration I&apos;ve thought through maticulously.
+              It&apos;s something my existing clients use everyday.
+              It&apos;s something that if not done right, can bury you in paperwork and depreciate your machines faster than you can say Kwazy Cupcakes.
             </p>
 
             <div className="grid md:grid-cols-2 gap-6">
@@ -197,8 +191,8 @@ export default function Vision() {
           <section className="space-y-4">
             <h2 className="text-2xl font-bold text-gray-900">Why This Approach Works</h2>
             <p>
-              Unlike enterprise software that forces you to change how you work, or generic tools that don't understand construction, 
-              Quto is built by someone who's lived these problems. I know why you can't just "implement a new system", because it has to work for everyone, 
+              Unlike enterprise software that forces you to change how you work, or generic tools that don&apos;t understand construction, 
+              Quto is built by someone who&apos;s lived these problems. I know why you can&apos;t just &quot;implement a new system&quot;, because it has to work for everyone, 
               from the apprentice doing their first prestart check to the director reviewing monthly financials.
             </p>
             <p>
@@ -210,11 +204,11 @@ export default function Vision() {
           <section className="space-y-4">
             <h2 className="text-2xl font-bold text-gray-900">What I Need From You</h2>
             <p>
-              If this vision resonates with you, I'd love your input. Whether you join the early access program or just share your thoughts, 
+              If this vision resonates with you, I&apos;d love your input. Whether you join the early access program or just share your thoughts, 
               your feedback shapes what gets built next.
             </p>
             <p>
-              I'm particularly interested in:
+              I&apos;m particularly interested in:
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>What operational headaches are costing you the most time and money?</li>
@@ -244,12 +238,12 @@ export default function Vision() {
                 <div className="text-center">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Thanks for Your Feedback! 🙏</h3>
                 <p className="text-gray-600">
-                    Your insights are invaluable for shaping what gets built next. I'll be in touch soon.
+                    Your insights are invaluable for shaping what gets built next. I&apos;ll be in touch soon.
                 </p>
                 </div>
             ) : (
                 <>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Can't wait to hear from you!</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Can&apos;t wait to hear from you!</h3>
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <div className="grid md:grid-cols-2 gap-4">
                     <input
